@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="山海里スポーツクラブ「いこな」は、「健康づくり」、「仲間づくり」、「地域づくり」、「生きがいづくり」のスポーツクラブです。" />
 <h2>仮のトップページ</h2>
 <p>これは仮のトップページです。</p>
 
