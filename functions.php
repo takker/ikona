@@ -1,11 +1,10 @@
-<?php
-function action_navigation_menu_setup() {
-	register_nav_menus( array(
-		'primary' => 'グローバルナビゲーション',
-		'secondary' => 'サブナビゲーション'
+<?php // カスタムメニューを追加
+if (function_exists('register_nav_menus')) {
+	register_nav_menus(array(
+		'Primary' => 'Global',
+		'Secondary' => 'Sub'
 	));
 }
-add_action('after_setup_theme', 'action_navigation_menu_setuup');
 ?>
 
 <?php // サイドバーにウィジェットを追加
