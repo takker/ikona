@@ -4,6 +4,24 @@
 <h2>仮のトップページ</h2>
 <p>これは仮のトップページです。</p>
 
+<h2>お知らせ</h2>
+<p>お知らせ一覧を見る</p>
+<?php
+$args = array(
+	'post_type' => 'information'
+);
+?>
+<?php query_posts($args); ?>
+<?php if (have_posts()) : ?>
+	<ul>
+	<?php while (have_posts()) : the_post(); ?>
+		<li><?php the_title(); ?></li>
+	<?php endwhile; ?>
+	</ul>
+<?php else : ?>
+	<p>記事がありません。</p>
+<?php endif; ?>
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
 
