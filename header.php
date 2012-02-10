@@ -17,12 +17,14 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<header>
-		<a href="/wordpress/"><h1>山海里スポーツクラブ「いこな」</h1></a>
-		<div id="site-description"><?php bloginfo('description'); ?></div>
+	<div id="wrapper">
+	<div id="outline">
+		<header>
+			<a href="/wordpress/"><h1>山海里スポーツクラブ「いこな」</h1></a>
+			<div id="site-description"><?php bloginfo('description'); ?></div>
 
-		<?php wp_nav_menu( array( 'container' => 'nav', 'container_class' => 'menu-header', 'theme_location' => 'Primary', 'depth' => 1 )); ?>
-		<?php wp_nav_menu( array( 'container_class' => 'submenu-header', 'theme_location' => 'Secondary' )); ?>
-	</header>
+			<?php wp_nav_menu( array( 'container' => 'nav', 'container_class' => 'menu-header', 'theme_location' => 'Primary', 'depth' => 1 )); ?>
+			<?php wp_nav_menu( array( 'container_class' => 'submenu-header', 'theme_location' => 'Secondary' )); ?>
+		</header>
 
-	<div id="main">
+		<div id="main">

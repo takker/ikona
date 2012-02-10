@@ -3,9 +3,21 @@
 @color-main: hsl(30, 100, 100);
 @color-bg: hsl(205, 75%, 80%);
 
+@padding: 20px;
+@w: 40px;
+@s: 10px;
+@cols: 16;
+@width: (@w + @s) * @cols - @s + @padding*2;
+
 .bg {
 	background-color: @color-bg;
 	background: -moz-linear-gradient(top center, @color-bg 0%, lighten(@color-bg, 20%) 100%);
 	background: -webkit-gradient(linear, center top, center bottom, from(@color-bg), to(lighten(@color-bg, 20%)));
 	background: linear-gradient(top center, @color-bg 0%, lighten(@color-bg, 20%) 100%);
+}
+
+/* 外枠 */
+@bw: 1px;
+.outline-border {
+	border: solid 1px black;
 }
