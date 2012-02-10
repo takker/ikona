@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-@color-main: hsl(30, 100, 100);
+@color-main: hsl(205, 75%, 80%);
+@color-sub: hsl(115, saturation(@color-main), 80%);
+@color-accent: hsl(25, saturation(@color-main), 80%);
 @color-bg: hsl(205, 75%, 80%);
 
 @padding: 20px;
@@ -8,6 +10,9 @@
 @s: 10px;
 @cols: 16;
 @width: (@w + @s) * @cols - @s + @padding*2;
+
+@menu-items: 5;
+@nav-width: @width / @menu-items;
 
 .bg {
 	background-color: @color-bg;
@@ -20,4 +25,11 @@
 @bw: 1px;
 .outline-border {
 	border: solid 1px black;
+}
+
+/* ナビゲーションのスタイル*/
+.nav-style {
+	background: @color-main;
+	border-top: solid 1px #000000;
+	border-bottom: solid 1px #000000;
 }

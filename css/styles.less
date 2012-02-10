@@ -23,6 +23,32 @@ body {
 	.outline-border;
 }
 
+header {
+	h1 {
+		margin: 20px;
+		width: 500px;
+		height: 50px;
+		background: url("../images/logo.png") no-repeat;
+		text-indent: -9999px;
+	}
+
+	nav {
+		.nav-style;
+		overflow: hidden;
+		text-align: center;
+
+		a {
+			width: @nav-width;
+			padding: 1em 0;
+			float: left;
+
+			&:hover {
+				background: darken(@color-main, 20%);
+			}
+		}
+	}
+}
+
 #footer-wrapper {
 	background: #000000;
 	padding: 20px 0;
