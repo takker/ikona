@@ -12,6 +12,5 @@
 	<p>記事はありません</p>
 <?php endif; ?>
 
-<?php get_footer(); ?>
 <?php get_sidebar(); ?>
-
+<?php get_footer(); ?>

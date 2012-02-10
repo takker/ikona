@@ -24,6 +24,10 @@
 
 			<?php wp_nav_menu( array( 'container' => 'nav', 'container_class' => 'menu-header', 'theme_location' => 'Primary', 'depth' => 1 )); ?>
 			<?php /* wp_nav_menu( array( 'container_class' => 'submenu-header', 'theme_location' => 'Secondary' )); */ ?>
+
+			<?php if (is_home()) : ?>
+				<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="山海里スポーツクラブ「いこな」は、「健康づくり」、「仲間づくり」、「地域づくり」、「生きがいづくり」のスポーツクラブです。" />
+			<?php endif; ?>
 		</header>
 
 		<div id="main">

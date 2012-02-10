@@ -5,3 +5,11 @@
 	font-size: 0rem + @size/10;
 }
 
+.cols(@n: 1) {
+	width: (@w + @s) * @n - @s;
+	margin-right: @s;
+}
+
+.last {
+	margin-right: 0px;
+}
