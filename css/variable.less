@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@color-main: hsl(30, 100, 100);
+@color-bg: hsl(205, 75%, 80%);
+
+.bg {
+	background-color: @color-bg;
+	background: -moz-linear-gradient(top center, @color-bg 0%, lighten(@color-bg, 20%) 100%);
+	background: -webkit-gradient(linear, center top, center bottom, from(@color-bg), to(lighten(@color-bg, 20%)));
+	background: linear-gradient(top center, @color-bg 0%, lighten(@color-bg, 20%) 100%);
+}
