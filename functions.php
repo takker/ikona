@@ -21,3 +21,11 @@ add_custom_image_header();
 if ( function_exists('register_sidebar') )
     register_sidebar();
 ?>
+
+<?php		// アイキャッチ画像に対応させる
+function action_post_thumbnail_setup() {
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 150, 150, true);
+}
+add_action( 'after_setup_theme', 'action_post_thumbnail_setup' );
+?>
