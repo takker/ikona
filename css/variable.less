@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@color-main: hsl(205, 75%, 80%);
+@color-sub: hsl(115, saturation(@color-main), 80%);
+@color-accent: hsl(25, saturation(@color-main), 80%);
+@color-bg: hsl(205, 75%, 80%);
+
+@padding: 20px;
+@w: 40px;
+@s: 10px;
+@cols: 16;
+@width: (@w + @s) * @cols - @s + @padding*2;
+
+@menu-items: 5;
+@nav-width: @width / @menu-items;
+
+.bg {
+	background-color: @color-bg;
+	background: -moz-linear-gradient(top center, @color-bg 0%, lighten(@color-bg, 20%) 100%);
+	background: -webkit-gradient(linear, center top, center bottom, from(@color-bg), to(lighten(@color-bg, 20%)));
+	background: linear-gradient(top center, @color-bg 0%, lighten(@color-bg, 20%) 100%);
+}
+
+/* 外枠 */
+@bw: 1px;
+.outline-border {
+	border: solid 1px black;
+	margin-top: -1px;
+}
+
+/* ナビゲーションのスタイル*/
+.nav-style {
+	background: @color-main;
+	border-top: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+}

@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import "variable.less";
+@import "mixin.less";
+
+html {
+	font-family: "Times New Roman", Georgia, "ＭＳ　Ｐゴシック", sans-serif;
+	font-size: 62.5%;
+}
+
+body {
+	.bg;
+	.fs(14);
+}
+
+#wrapper {
+	width: @width + @bw * 2;
+	margin: 0 auto 20px;
+	background: #ffffff;
+}
+
+#outline {
+	.outline-border;
+}
+
+header {
+	h1 {
+		margin: 20px;
+		width: 500px;
+		height: 50px;
+		background: url("../images/logo.png") no-repeat;
+		text-indent: -9999px;
+	}
+
+	nav {
+		.nav-style;
+		overflow: hidden;
+		text-align: center;
+
+		a {
+			width: @nav-width;
+			padding: 1em 0;
+			float: left;
+
+			&:hover {
+				background: darken(@color-main, 20%);
+			}
+		}
+	}
+}
+
+body.page {
+	#contents {
+		.cols(12);
+	}
+
+	aside {
+		.cols(4);
+	.last;
+	}
+}
+
+body.home {
+	#contents {
+		.cols(8);
+	}
+
+	aside {
+		.cols(8);
+	.last;
+	}
+}
+
+#contents {
+	float: left;
+}
+
+aside {
+	float: left;
+
+	#toto-logo {
+		margin: 10px auto;
+		width: 160px;
+		.fs(12);
+	}
+}
+
+#main {
+	padding: 20px;
+	overflow: hidden;
+}
+
+#footer-wrapper {
+	background: #000000;
+	padding: 20px 0;
+
+	footer {
+		width: @width;
+		margin: 0 auto;
+		color: #ffffff;
+	}
+}

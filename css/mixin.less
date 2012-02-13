@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.fs(@size) {
+	font-size: 0px + @size;
+	font-size: 0rem + @size/10;
+}
+
+.cols(@n: 1) {
+	width: (@w + @s) * @n - @s;
+	margin-right: @s;
+}
+
+.last {
+	margin-right: 0px;
+}
